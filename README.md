@@ -5,8 +5,6 @@ Autora: Princic-Lozza, Nara.
 
 ## Probarlo rápido
 
-- **Demo en línea:** [PEGAR AQUÍ EL LINK DE VERCEL] — cuenta de prueba `demo@prototipo.com`, contraseña `Glucosa2026`.
-  El servidor gratuito se duerme tras 15 minutos sin uso: la primera vez puede tardar un minuto en responder.
 - **En la compu (Windows):** con Python 3.14, Node.js y PostgreSQL instalados, doble clic en `iniciar.bat`.
   La primera vez instala todo y pide la contraseña de PostgreSQL; la base de datos se crea sola.
   Después, `cargar_demo.bat` crea la cuenta de prueba con datos sintéticos.
