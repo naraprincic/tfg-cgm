@@ -5,6 +5,7 @@ Autora: Princic-Lozza, Nara.
 
 ## Probarlo rápido
 
+- **Demo en línea:** https://tfg-cgm.vercel.app — en la pantalla de inicio de sesión, tocar «Completar con la cuenta de prueba» e «Ingresar». La cuenta ya tiene 38 días de mediciones sintéticas, eventos y resúmenes cargados. El servidor gratuito se suspende tras unos minutos sin uso: el primer ingreso puede tardar alrededor de un minuto.
 - **En la compu (Windows):** con Python 3.14, Node.js y PostgreSQL instalados, doble clic en `iniciar.bat`.
   La primera vez instala todo y pide la contraseña de PostgreSQL; la base de datos se crea sola.
   Después, `cargar_demo.bat` crea la cuenta de prueba con datos sintéticos.
