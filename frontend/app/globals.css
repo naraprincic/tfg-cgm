@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Colores tomados de los prototipos de interfaz de la tesis (Figuras 5 a 10). */
+@theme {
+  --color-marca: #1b4d57;        /* verde petróleo: encabezado y botones */
+  --color-marca-oscuro: #143a42;
+  --color-fondo: #f4f6f5;
+  --color-borde: #dfe5e3;
+  --color-texto: #1f2a2c;
+  --color-suave: #5b6b6e;
+  --color-activo: #e3efe3;       /* fondo del ítem activo del menú */
+  --color-activo-borde: #9bcb7a;
+  --color-rango: #e2f0d9;        /* banda del rango objetivo */
+  --color-ok: #2e7d32;
+  --color-ok-fondo: #e3f1e1;
+  --color-error: #b3261e;
+  --color-error-fondo: #fde4e1;
+  --color-aviso: #8a5a00;
+  --color-aviso-fondo: #fff3d6;
+  --font-sans: "Inter", "Segoe UI", ui-sans-serif, system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+
+html,
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+/* Foco visible para quien navega con teclado. */
+:focus-visible {
+  outline: 2px solid var(--color-marca);
+  outline-offset: 2px;
+}

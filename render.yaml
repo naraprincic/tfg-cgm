@@ -1,0 +1,21 @@
+# Configuración del backend en Render (demo en línea). Render lee este archivo al crear el servicio.
+services:
+  - type: web
+    name: tesis-cgm-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /salud
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.10
+      - key: DATABASE_URL        # dirección de la base en Neon (se pega en el panel de Render)
+        sync: false
+      - key: OPENAI_API_KEY      # clave de OpenAI (se pega en el panel de Render)
+        sync: false
+      - key: COOKIE_SEGURA       # en la nube la cookie de sesión solo viaja por HTTPS
+        value: "true"
+      - key: LIMITE_IA_DIARIO    # tope diario de pedidos a la IA para cuidar el saldo
+        value: "150"

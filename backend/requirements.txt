@@ -1,0 +1,17 @@
+# Bibliotecas de Python que usa el backend (con versión fija para que
+# en cualquier compu se instale exactamente lo mismo).
+fastapi==0.161.1          # framework de la API
+uvicorn==0.54.0           # servidor que ejecuta la API
+sqlalchemy==2.1.6         # trabajar con la base de datos desde Python
+psycopg[binary]==3.3.6    # "driver" para conectarse a PostgreSQL
+pydantic-settings==2.16.1 # leer la configuración del archivo .env
+email-validator==2.3.0    # validar el formato de los correos electrónicos
+bcrypt==5.0.0             # cifrar las contraseñas mediante hash
+python-multipart==0.0.33  # recibir archivos subidos (CSV)
+pandas==3.1.0             # procesar y validar las mediciones
+tzdata==2026.6            # zonas horarias (Windows no las trae incluidas)
+openai==3.42.1            # modelo de lenguaje (eventos en lenguaje natural y resumen diario)
+
+# Pruebas automáticas
+pytest==9.2.0             # ejecutar las pruebas
+httpx2==2.16.0            # lo usa el cliente de pruebas de FastAPI

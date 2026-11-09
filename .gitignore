@@ -1,0 +1,25 @@
+# Archivos con contraseñas: nunca se suben
+.env
+.env.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Editor y sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Documentos de la tesis (van al Drive, no al repositorio)
+*.docx
+*.pdf
+
+.ruff_cache/
